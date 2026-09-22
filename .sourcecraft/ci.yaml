@@ -12,6 +12,10 @@ workflows:
           - name: publish-site
             script:
               - git checkout -B release
-              - git add -f src/index.html src/style.css
+              - git rm -rf --cached . || true
+              - git checkout -- . || true
+              - rm -f src/CNAME src/.nojekyll
+              - rm -rf .github .sourcecraft
+              - git add -A
               - "git commit -m 'feat: release'"
               - git push origin release -f

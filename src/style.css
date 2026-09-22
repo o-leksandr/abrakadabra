@@ -13,3 +13,14 @@ footer {
   padding: 2rem 1rem;
   background: #fff;
 }
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.badges img {
+  height: 20px;
+  width: auto;
+}
