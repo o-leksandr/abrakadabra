@@ -1,0 +1,17 @@
+on:
+  push:
+    workflows: build-site
+    filter:
+      branches: main
+
+workflows:
+  build-site:
+    tasks:
+      - name: build-site
+        cubes:
+          - name: publish-site
+            script:
+              - git checkout -B release
+              - git add -f src/index.html src/style.css
+              - "git commit -m 'feat: release'"
+              - git push origin release -f
