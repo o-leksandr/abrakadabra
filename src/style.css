@@ -23,9 +23,11 @@ main {
 }
 
 footer {
-  text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 2rem;
   background: #474747;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .ascii-link {
@@ -47,10 +49,20 @@ footer {
   user-select: none;
 }
 
+.backlog {
+  display: flex;
+  gap: 8px;
+}
+
+.backlog img {
+  height: 20px;
+  width: auto;
+}
+
 .badges {
   display: flex;
-  justify-content: flex-end;
   gap: 8px;
+  margin-left: auto;
 }
 
 .badges img {
