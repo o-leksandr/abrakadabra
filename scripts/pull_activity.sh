@@ -88,4 +88,6 @@ if ! grep -q "<desc>${JOB_ID}</desc>" "${DEST}"; then
     exit 1
 fi
 
+sed -i 's|<text[^>]*class="graph-label"[^>]*>[^<]*</text>||g' "${DEST}" || true
+
 exit 0
