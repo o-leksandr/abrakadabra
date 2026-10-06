@@ -1,4 +1,4 @@
-<!-- filename: ./src/index.html -->
+<!-- filename: ./src/index_with_js.html -->
 <!-- date: 06.10.2026 -->
 
 <!DOCTYPE html>
@@ -9,7 +9,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>abrakadabra.life</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style_with_js.css" />
+
+    <script defer src="radio.js"></script>
 
   </head>
 
@@ -17,7 +19,7 @@
 
     <header class="header">
 
-      <a class="with_js" href="index_with_js.html" alt="JavaScript">JS -> ON</a>
+      <br>
 
     </header>
 
@@ -75,6 +77,12 @@
         <a href="https://alexander-globa.sourcecraft.site/abrakadabra">
           <img src="https://storage.yandexcloud.net/cloud-www-assets/pages/yandex-src/dev/1-1.svg" alt="SourceCraft Sites">
         </a>
+
+      </div>
+
+      <div class="radio">
+
+        <button class="radio-btn" id="radio-btn" type="button" aria-label="Play">▶</button>
 
       </div>
 

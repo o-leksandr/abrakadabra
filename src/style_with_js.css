@@ -1,4 +1,4 @@
-/* filename: ./src/style.css */
+/* filename: ./src/style_with_js.css */
 /* date: 06.10.2026 */
 
 html, body {
@@ -11,23 +11,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-
-.with_js {
-  padding: 0px 10px;
-  background: hsl(0, 68%, 20%);
-  color: hsl(0, 11%, 96%);
-  text-decoration: none;
-  border-radius: 15px;
-  transition: background 0.15s ease;
-}
-
-.with_js:hover {
-  background: hsl(3, 100%, 50%);
-}
-
-.with_js:focus-visible {
-  outline: 2px solid #f9f9f9;
 }
 
 body {
@@ -105,4 +88,37 @@ footer {
 .badges img {
   height: 20px;
   width: auto;
+}
+
+.radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.radio-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font: inherit;
+  font-size: 0.7rem;
+  background: hsl(84, 2%, 42%);
+  color: #1a1a1a;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.radio-btn:hover {
+  background: #7bc96f;
+}
+
+.radio-btn:focus-visible {
+  outline: 2px solid #f9f9f9;
+  outline-offset: 2px;
 }
